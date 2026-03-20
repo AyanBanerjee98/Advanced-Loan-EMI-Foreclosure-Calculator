@@ -158,17 +158,17 @@ It assumes **reducing-balance interest** and foreclosure charges as a percentage
 
     loan_amount = st.sidebar.number_input(
         "Loan Amount (Principal)",
-        min_value=1000.0,
-        value=500000.0,
-        step=10000.0,
-        format="%.2f",
+        min_value=1000,
+        value=495151,
+        step=10000,
+        format="%d",
     )
 
     annual_interest = st.sidebar.number_input(
         "Annual Interest Rate (%)",
         min_value=0.0,
         max_value=100.0,
-        value=10.0,
+        value=13.5,
         step=0.1,
         format="%.3f",
     )
@@ -177,7 +177,7 @@ It assumes **reducing-balance interest** and foreclosure charges as a percentage
         "Tenure (months)",
         min_value=1,
         max_value=600,
-        value=60,
+        value=48,
         step=1,
     )
 
@@ -195,7 +195,7 @@ It assumes **reducing-balance interest** and foreclosure charges as a percentage
         max_value=100.0,
         value=5.0,
         step=0.1,
-        format="%.3f",
+        format="%.2f",
     )
 
     gst_rate = st.sidebar.number_input(
@@ -204,7 +204,7 @@ It assumes **reducing-balance interest** and foreclosure charges as a percentage
         max_value=100.0,
         value=18.0,
         step=0.1,
-        format="%.3f",
+        format="%.2f",
     )
 
     st.sidebar.markdown("---")
